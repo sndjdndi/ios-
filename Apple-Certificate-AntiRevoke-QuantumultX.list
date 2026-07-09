@@ -1,0 +1,32 @@
+# Apple Certificate AntiRevoke for Quantumult X
+# Converted from: https://github.com/salem-2007/apple-cert-block
+# Purpose: block Apple / CA certificate validation endpoints
+
+# Apple OCSP
+HOST,ocsp.apple.com,REJECT
+HOST,ocsp2.apple.com,REJECT
+
+# Apple Validation
+HOST,valid.apple.com,REJECT
+HOST,ppq.apple.com,REJECT
+HOST,ppq-ext.v.aaplimg.com,REJECT
+
+# Apple CRL
+HOST,crl.apple.com,REJECT
+HOST,certs.apple.com,REJECT
+
+# DigiCert
+HOST,ocsp.digicert.com,REJECT
+HOST,ocsp.digicert.cn,REJECT
+HOST,crl3.digicert.com,REJECT
+HOST,crl4.digicert.com,REJECT
+
+# Entrust
+HOST,ocsp.entrust.net,REJECT
+HOST,crl.entrust.net,REJECT
+
+# Sectigo / USERTrust
+HOST,ocsp.sectigo.com,REJECT
+HOST,crl.sectigo.com,REJECT
+HOST,ocsp.usertrust.com,REJECT
+HOST,crl.usertrust.com,REJECT
